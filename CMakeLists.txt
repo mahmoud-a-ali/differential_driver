@@ -3,8 +3,7 @@ project(differential_driver)
 add_compile_options(-std=c++11)
 set(CMAKE_BUILD_TYPE Release)
 find_package(catkin REQUIRED COMPONENTS tf roscpp nav_msgs geometry_msgs visualization_msgs dynamic_reconfigure)
-find_package(Boost REQUIRED COMPONENTS bind)
-# generate_dynamic_reconfigure_options(cfg/Parameters.cfg)
+generate_dynamic_reconfigure_options(cfg/Parameters.cfg)
 catkin_package(
   INCLUDE_DIRS
   include
