@@ -15,6 +15,6 @@ catkin_package(
   visualization_msgs
   dynamic_reconfigure)
 include_directories(include ${catkin_INCLUDE_DIRS})
-# add_executable(${PROJECT_NAME}_node src/nodes/${PROJECT_NAME}_node.cpp src/${PROJECT_NAME}.cpp src/pd_controller.cpp)
-# add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-# target_link_libraries(${PROJECT_NAME}_node ${catkin_LIBRARIES})
+add_executable(${PROJECT_NAME}_node src/nodes/${PROJECT_NAME}_node.cpp src/${PROJECT_NAME}.cpp src/pd_controller.cpp)
+add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(${PROJECT_NAME}_node ${catkin_LIBRARIES})
