@@ -1,0 +1,17 @@
+<package format="2">
+  <name>differential_driver</name>
+  <version>0.0.0</version>
+  <description>
+    PD controller for differential drive.
+  </description>
+  <author>Weizhe (Wesley) Chen</author>
+  <maintainer email="chenweiz@iu.edu">Weizhe (Wesley) Chen</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>tf</depend>
+  <depend>roscpp</depend>
+  <depend>nav_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>visualization_msgs</depend>
+  <depend>dynamic_reconfigure</depend>
+</package>
